@@ -1,11 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework 3 table</title>
+    <style>
+      table,
+      th,
+      tr,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 5px 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Train No.</th>
+          <th rowspan="2">Route</th>
+          <th colspan="5">Weekdays</th>
+          <th colspan="2">Weekend</th>
+        </tr>
+        <tr>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+          <th>Sun</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>City A -> City B</td>
+          <td>08:00</td>
+          <td>08:00</td>
+          <td>08:00</td>
+          <td>08:00</td>
+          <td>08:00</td>
+          <td>09:00</td>
+          <td>09:30</td>
+        </tr>
+        <tr>
+          <td>205</td>
+          <td>City B -> City C</td>
+          <td>08:00</td>
+          <td>10:30</td>
+          <td>10:30</td>
+          <td>10:30</td>
+          <td>10:30</td>
+          <td>11:45</td>
+          <td>11:45</td>
+        </tr>
+        <tr>
+          <td>309</td>
+          <td>City C -> City A</td>
+          <td>15:45</td>
+          <td>15:45</td>
+          <td>15:45</td>
+          <td>15:45</td>
+          <td>15:45</td>
+          <td colspan="2">No Service</td>
+        </tr>
+        <tr>
+          <td>412</td>
+          <td>City A -> City D</td>
+          <td>18:00</td>
+          <td>18:00</td>
+          <td>18:00</td>
+          <td>18:00</td>
+          <td>18:00</td>
+          <td>19:15</td>
+          <td>19:30</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
