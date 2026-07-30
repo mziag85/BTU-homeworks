@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page with a table</title>
+  </head>
+  <style>
+    table,
+    th,
+    tr,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px 7px;
+    }
+  </style>
+  <body>
+    <head>
+      <h1>My Homework Page</h1>
+      <nav>
+        <a href="">Schedule</a>
+        <a href="">Gallery</a>
+        <a href="">Contact</a>
+      </nav>
+    </head>
+
+    <main>
+      <article>
+        <h2 id="hobby">My Favourite Hobby</h2>
+        <p>I love traveling and exploring new places. Below is one of my favourite pictures from my last trip:</p>
+        <img src="" alt="Beautiful landscape scenery" />
+      </article>
+      
+      <br>
+
+      <table >
+        <h2 id="schedule">My Weekly Class Schedule</h2>
+        
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>8:00-10:00</th>
+            <th>10:00-12:00</th>
+            <th>1:00-3:00</th>
+            <th>3:00-5:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td colspan="2">Project Work</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>English</td>
+            <td>History</td>
+            <td>Sports</td>
+            <td>Free Study</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Computer Lab</td>
+            <td>Math</td>
+            <td>Art</td>
+            <td>Science</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>English</td>
+            <td>Science</td>
+            <td colspan="2">Field Trip</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Math</td>
+            <td>Computer Lab</td>
+            <td>Music</td>
+            <td>Sports</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="contact">Contact Me</h2>
+      <form>
+        <label for="name">Your Name:</label><br />
+        <input type="text" id="name" />
+        <br /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" />
+        <br><br>
+        <label for="message">Message</label><br>
+        <input type="textarea" id="textarea"> 
+        <br><br>
+        <label>Favourite Subject:</label><br>
+
+        <input type="radio" id="math" name="subject" value="Math">
+        <label for="subject">Math</label>
+
+        <input type="radio" id="science" name="subject" value="Science">
+        <label for="subject">Science</label>
+
+        <input type="radio" id="English" name="subject" value="english">
+        <label for="subject">English</label> <br>
+
+        <label for="color">Pick a color you like:</label>
+        <input type="color" id="color" name="color" value="#ffffff"><br><br>
+        <button>Send Message</button>
+      </form>
+      <aside>
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#hobby">See my Hobby</li>
+        <li><a href="#schedule">View My Schedule</a></li>
+        <li> <a href="#contact">Contact Me </a></li>
+
+      </ul>
+      </aside>
+    </main>
+     <footer>
+        <p>2026 My Homework Page. All rights reserved.</p>
+     </footer>
+  </body>
+</html>
+
+
+
