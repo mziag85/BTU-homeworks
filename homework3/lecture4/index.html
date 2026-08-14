@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 + h2 {
+        color: black;
+        font-size: 23px;
+        background-color: aqua;
+      }
+
+      h2:nth-child(3) {
+        background-color: blue;
+      }
+
+      #mn {
+        background-color: blueviolet;
+      }
+
+      div > h2 {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: gray" ; font-size: 25px>Header 1</h1>
+
+    <h2>Header2-1</h2>
+    <h2>Header 2-1.5</h2>
+    <h2 id="mn">Header 2-1.8</h2>
+    <div>
+      <h2>Header 2-2</h2>
+      <span>
+        <h2>Header 2-After-sibling</h2>
+      </span>
+    </div>
+
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+  </body>
+</html>
