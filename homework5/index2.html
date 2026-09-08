@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorful table with flex2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+
+      .cell {
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+      }
+      .yellow {
+        background-color: rgb(229, 214, 98);
+      }
+      .blue {
+        background-color: rgb(77, 167, 232);
+      }
+      .green {
+        background-color: green;
+      }
+      .orange {
+        background-color: rgb(245, 133, 5);
+      }
+      .row1,
+      .row2,
+      .row3,
+      .row4,
+      .row5,
+      .row6,
+      .row7,
+      .row8,
+      .row9,
+      .row10,
+      .row11,
+      .row12,
+      .row13,
+      .row14,
+      .row15,
+      .row16 {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row1">
+        <div
+          class="cell yellow"
+          style="border-bottom: none; border-right: none"></div>
+        <div
+          class="cell yellow"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="border-bottom: none; border-right: none"></div>
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="border-bottom: none; border-left: none"></div>
+        <div
+          class="cell yellow"
+          style="
+            border-left: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div class="cell orange" style="border-bottom: none"></div>
+      </div>
+      <div class="row2">
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+            border-left: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+            border-left: none;
+          "></div>
+        <div class="cell green"></div>
+      </div>
+      <div class="row3">
+        <div
+          class="cell yellow"
+          style="
+            border-bottom: none;
+            border-top: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-bottom: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+            border-left: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+            border-left: none;
+          "></div>
+        <div class="cell orange" style="border-top: none"></div>
+      </div>
+      <div class="row4">
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            border-left: none;
+          "></div>
+        <div class="cell orange" style="border-top: none"></div>
+      </div>
+      <div class="row5">
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+          "></div>
+        <div
+          class="cell orange"
+          style="border-bottom: none; border-top: none"></div>
+      </div>
+      <div class="row6">
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            border-left: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+            border-left: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            border-left: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            border-top: none;
+          "></div>
+        <div class="cell orange" style="border-bottom: none"></div>
+      </div>
+      <div class="row7">
+        <div
+          class="cell blue"
+          style="border-bottom: none; border-right: none"></div>
+        <div
+          class="cell blue"
+          style="border-bottom: none; border-left: none"></div>
+        <div
+          class="cell blue"
+          style="
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-right: none;
+            border-bottom: none;
+            border-top: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-top: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-bottom: none;
+            border-right: none;
+            border-left: none;
+          "></div>
+        <div class="cell orange" style="border-bottom: none"></div>
+      </div>
+      <div class="row8">
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+            border-right: none;
+            border-top: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-top: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div class="cell yellow"></div>
+        <div
+          class="cell yellow"
+          style="
+            border-bottom: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div class="cell orange"></div>
+      </div>
+      <div class="row9">
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="border-top: none; border-bottom: none"></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell orange"
+          style="border-top: none; border-bottom: none"></div>
+      </div>
+      <div class="row10">
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            border-left: none;
+          "></div>
+        <div class="cell orange" style="border-bottom: none"></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div class="cell green" style="border-bottom: none"></div>
+      </div>
+      <div class="row11">
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            border-left: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="border-bottom: none; border-right: none"></div>
+        <div
+          class="cell yellow"
+          style="border-bottom: none; border-right: none"></div>
+        <div
+          class="cell yellow"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div class="cell orange" style="border-bottom: none"></div>
+      </div>
+      <div class="row12">
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-bottom: none;
+            border-top: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            border-top: none;
+          "></div>
+        <div class="cell green" style="border-bottom: none"></div>
+      </div>
+      <div class="row13">
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell orange"
+          style="
+            border-bottom: none;
+
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-bottom: none;
+            border-top: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div class="cell orange" style="border-bottom: none"></div>
+      </div>
+      <div class="row14">
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell orange"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-bottom: none;
+
+            border-right: none;
+          "></div>
+        <div
+          class="cell orange"
+          style="
+            border-bottom: none;
+
+            border-right: none;
+          "></div>
+        <div class="cell orange" style="border-bottom: none"></div>
+      </div>
+      <div class="row15">
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell blue"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell orange"
+          style="
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-bottom: none;
+            border-top: none;
+            border-right: none;
+          "></div>
+        <div
+          class="cell orange"
+          style="
+            border-bottom: none;
+            border-right: none;
+            border-right: none;
+          "></div>
+        <div class="cell orange" style="border-bottom: none"></div>
+      </div>
+      <div class="row16">
+        <div class="cell blue" style="border-right: none"></div>
+        <div class="cell blue" style="border-right: none"></div>
+        <div class="cell blue" style="border-right: none"></div>
+        <div class="cell blue" style="border-right: none"></div>
+        <div
+          class="cell orange"
+          style="
+            border-top: none;
+
+            border-right: none;
+          "></div>
+        <div
+          class="cell yellow"
+          style="
+            border-top: none;
+
+            border-right: none;
+          "></div>
+        <div
+          class="cell orange"
+          style="
+            border-top: none;
+
+            border-right: none;
+          "></div>
+        <div class="cell orange"></div>
+      </div>
+    </div>
+  </body>
+</html>

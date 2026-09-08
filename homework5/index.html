@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorful table by flex</title>
+    <style>
+      .mother {
+        position: relative;
+      }
+      .border {
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+      .cell {
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+      .blue {
+        background-color: rgb(38, 180, 236);
+      }
+      .yellow {
+        background-color: rgb(223, 207, 103);
+      }
+      .orange {
+        background-color: rgb(215, 118, 27);
+      }
+      .green {
+        background-color: rgb(13, 86, 8);
+      }
+      .firsColumn {
+        display: flex;
+        flex-direction: column;
+      }
+      .firstColyel {
+        width: 90px;
+        height: 180px;
+      }
+
+      .firstColbl {
+        width: 60px;
+        height: 120px;
+      }
+      .firstColbl2 {
+        width: 120px;
+        height: 60px;
+      }
+
+      .firstColbl3 {
+        width: 120px;
+        height: 90px;
+      }
+      .lastRow {
+        display: flex;
+        position: absolute;
+        left: 30px;
+        top: 450px;
+      }
+      .row_8_10_yel_or {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 210px;
+        left: 150px;
+      }
+      .yellow_1_10row {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 180px;
+      }
+      .row1yell {
+        width: 30px;
+        height: 180px;
+      }
+      .row10yell {
+        width: 30px;
+        height: 120px;
+      }
+      .lastCol {
+        position: absolute;
+        top: 0;
+        left: 210px;
+      }
+      .row_11_16_yel_org {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 300px;
+        left: 120px;
+      }
+
+      .row_11yel {
+        width: 30px;
+        height: 60px;
+      }
+      .row_16org {
+        width: 30px;
+        height: 120px;
+      }
+
+      .row_11_16_yellow {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 300px;
+        left: 150px;
+      }
+      .row_11yellow {
+        width: 60px;
+        height: 90px;
+      }
+
+      .row_16yellow {
+        width: 30px;
+        height: 90px;
+      }
+      .row_14_16_org {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 390px;
+        left: 180px;
+      }
+      .row_16_orange {
+        width: 30px;
+        height: 60px;
+      }
+      .row_7_10_blue {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 180px;
+        left: 60px;
+      }
+      .row_8_10_blue {
+        width: 90px;
+        height: 90px;
+      }
+      .col_2_blue {
+        width: 90px;
+        height: 210px;
+        position: absolute;
+        top: 0;
+        left: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mother">
+      <div class="firstColomn">
+        <div class="yellow firstColyel border"></div>
+        <div class="blue firstColbl border"></div>
+        <div class="blue firstColbl2 border"></div>
+        <div class="blue firstColbl3 border"></div>
+        <div class="blue cell"></div>
+
+        <div class="lastRow">
+          <div class="blue cell"></div>
+          <div class="blue cell"></div>
+          <div class="blue cell"></div>
+        </div>
+
+        <div class="row_8_10_yel_or">
+          <div class="yellow cell"></div>
+          <div class="yellow cell"></div>
+          <div class="orange cell"></div>
+        </div>
+
+        <div class="yellow_1_10row">
+          <div class="yellow row1yell border"></div>
+          <div class="yellow row10yell border"></div>
+        </div>
+
+        <div class="lastCol">
+          <div class="orange cell"></div>
+          <div class="green cell"></div>
+          <div class="orange cell"></div>
+          <div class="orange cell"></div>
+          <div class="orange cell"></div>
+          <div class="orange cell"></div>
+          <div class="orange cell"></div>
+          <div class="orange cell"></div>
+          <div class="orange cell"></div>
+          <div class="green cell"></div>
+          <div class="orange cell"></div>
+          <div class="green cell"></div>
+          <div class="orange cell"></div>
+          <div class="orange cell"></div>
+          <div class="orange cell"></div>
+          <div class="orange cell"></div>
+        </div>
+
+        <div class="row_11_16_yel_org">
+          <div class="yellow row_11yel border"></div>
+          <div class="orange row_16org border"></div>
+        </div>
+
+        <div class="row_11_16_yellow">
+          <div class="yellow border row_11yellow"></div>
+          <div class="yellow border row_16yellow"></div>
+        </div>
+
+        <div class="row_14_16_org">
+          <div class="orange cell"></div>
+          <div class="orange border row_16_orange"></div>
+        </div>
+        <div class="row_7_10_blue">
+          <div class="blue cell"></div>
+          <div class="blue border row_8_10_blue"></div>
+        </div>
+        <div class="blue border col_2_blue"></div>
+      </div>
+    </div>
+  </body>
+</html>
