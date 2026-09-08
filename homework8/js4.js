@@ -1,0 +1,53 @@
+// # დავალება 4 — საფეხბურთო ლიგის ქულების დათვლა (calculatePoints)
+
+// ## ამოცანა
+// მოცემულია მატჩების შედეგების მასივი (სტრიქონები ფორმატით "x:y"), სადაც:
+// - x — თქვენი გუნდის გოლები
+// - y — მოწინააღმდეგის გოლები
+
+// მაგალითი მონაცემები:
+// ```js
+// const results = [
+//   '3:1', '2:2', '0:1', '4:0', '1:1',
+//   '2:0', '3:3', '0:2', '1:0', '2:1'
+// ];
+// ```
+
+// შექმენით ფუნქცია `calculatePoints(results)`, რომელიც:
+// - გადაუვლის მასივს;
+// - თითო მატჩზე:
+//   - თუ x > y — მოგება → 3 ქულა
+//   - თუ x === y — ფრე → 1 ქულა
+//   - თუ x < y — მარცხი → 0 ქულა
+// - დააბრუნებს დაგროვილ მთლიან ქულებს საკუთარ გუნდზე.
+
+// ## გამოყენების მაგალითი
+// ```js
+// console.log(calculatePoints(results)); // 17 (მაგალითი)
+// ```
+
+const results = [
+  '3:1', '2:2', '0:1', '4:0', '1:1',
+  '2:0', '3:3', '0:2', '1:0', '2:1'
+];
+
+function calculatePoints(results){
+      
+    let score = 0; 
+
+     for (let i=0; i<results.length; i++){
+        let result = results[i].split(':');
+        
+        if(result[0]>result[1]){
+             score = score + 3;
+        }else if(result[0]===result[1]){
+            score = score + 1;
+        } else if (result[0]<result[1]){
+            score = score + 0;
+        }
+        
+        
+     }
+     return score;
+}
+console.log(calculatePoints(results));

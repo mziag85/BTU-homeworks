@@ -1,0 +1,26 @@
+// # გაფართოებული დავალება 3 — უნიკალური მნიშვნელობები (uniqueValues)
+
+// ## დავალება
+// შექმენით ფუნქცია `uniqueValues(arr)`, რომელიც აბრუნებს ახალ მასივს, სადაც დარჩენილია მხოლოდ უნიკალური ელემენტები.
+
+// ## მაგალითი
+// ```js
+// console.log(uniqueValues([1, 2, 2, 3, 4, 4, 5])); // [1, 2, 3, 4, 5]
+// ```
+
+
+
+// ---
+
+function uniqueValues(arr) {
+    let value= [];
+    for(let i=0; i<arr.length; i++){
+        if (!value.includes(arr[i])){
+            value.push(arr[i])
+        }
+    } return value;
+}
+console.log(uniqueValues([1, 2, 2, 3, 4, 4, 5]));
+
+
+
