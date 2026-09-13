@@ -39,7 +39,7 @@ class BankAccount {
     }
 
     deposit(amount) {
-    if (amount < 0) {
+   if(amount < 0 || amount > this.#balance) {
         return;
     }
 

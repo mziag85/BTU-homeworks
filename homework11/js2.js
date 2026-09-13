@@ -1,6 +1,5 @@
 // # 🎓 სტუდენტების შეფასების სისტემა – დავალება
 
-const { version } = require("react");
 
 // ## საკითხები
 // - კლასი (Class)
@@ -137,8 +136,8 @@ class Motorcycle extends Vehicle{
 }
 
 
-const Car = new Car;
-const Motorcycle = new Motorcycle;
+const Auto = new Car;
+const Cycle = new Motorcycle;
 
 
 
