@@ -14,24 +14,25 @@
 }
  
 
-header{
-    background: url(./images/heroFoto.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+header {
+    background: url(./images/heroFoto.svg) center / cover no-repeat;
     width: 100%;
-    height: 754px;
-    padding: 35px 122px;
+    min-height: 754px;
+    padding: 35px 120px;
     position: relative;
     margin-bottom: 120px;
+
 
  nav{
     display: flex;
     justify-content:flex-end;
     gap: 40px;
-    ;
     
      
+ }
+ .burgerMenu{
+    display: none;
  }
 ul{
   display: flex;
@@ -56,11 +57,12 @@ li{
     
 }
 .h1andtext{
-    width: 665px;
-    height: 406px;
-    position: absolute;
+    max-width: 665px;
+    max-height: 406px;
     top: 200px;
     left: 122px;
+    position: absolute;
+    text-wrap: wrap;
     
     
 }
@@ -90,14 +92,15 @@ p{
 
 input{
     color: rgba(0, 0, 0, 0.4);
+    margin-top: 19px;
+    margin-left: 32px;
+    margin-right: 150px;
     font-weight: 400;
     font-size: 16px;
     line-height: 36px;
     word-spacing: 0.2px;
     border: none; 
-    margin-left: 32px;
-    margin-top: 19px;
-    margin-right: 150px;
+  
     
     
 }
@@ -115,9 +118,11 @@ input{
 }
 
 
+
+
+
+
 aside{
-
-
     h2{
     font-weight: 800;
     font-size: 36px;
@@ -202,6 +207,9 @@ aside{
 
     }
 
+  
+
+
     .red_wrapper{
         background-image: linear-gradient(rgba(248, 70, 70, 1),
         rgba(232, 77, 77, 0.968)),
@@ -252,18 +260,25 @@ aside{
     
 }
 
+
+  
+
 .section_meeting{
+
     display: flex;
-    justify-content: space-around;
+    gap: 100px;
     margin: 0 auto;
     margin-bottom: 120px;
+    justify-content: center;
+
 
 
 .text_meeting{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 420px;
+    width: 32%;
+    
     
 }
 
@@ -289,8 +304,8 @@ button{
 
 }
 img{
-    width: 504px;
-    height: 480px;
+    max-width: 504px;
+    max-height: 480px;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -299,16 +314,17 @@ img{
     
 .section_laptop{
     display: flex;
-    justify-content: space-around;
+    gap: 100px;
     margin: 0 auto;
     margin-bottom: 120px;
+     justify-content: center;
 
 
 .text_laptop{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 420px;
+    width: 32%;
     
 }
 
@@ -333,7 +349,7 @@ button{
     width:160px;
 }
 img{
-    width: 504px;
+    max-width: 504px;
     height: 480px;
     border-radius: 8px;
     object-fit: cover;
@@ -460,7 +476,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding: 80px 100px 70px 5px;
+    padding: 80px 100px 70px 100px;
 
 
 .box1{
@@ -520,4 +536,501 @@ footer {
 
 
 
+ @media  (min-width: 764px) and (max-width: 1024px){
+    
+  header {
+    
+    height: auto;
+    padding: 35px 40px;
 
+ nav{
+     justify-content: center;
+     
+ }
+.h1andtext{
+    top: 162px;
+    left: 84px;
+    width: 665px;
+    height: 365px;
+  
+}
+h1{
+    
+    width: 665px;
+
+}
+p{
+    
+    width: 565px;
+    
+}
+
+.inputBox{
+    width: 422px;
+    margin-bottom: 127px;
+
+}
+input{
+    
+    margin-left: 26px;
+    margin-right: 31px;
+    
+    
+}
+}
+
+
+aside{
+    text-align: center;
+    padding: 5px 80px;
+  
+ 
+.gridMaintext{
+   
+    max-width: 852px;
+    
+   
+    }
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 116px;
+        max-width: 764px;
+        margin-bottom: 130px;
+        
+    }
+       
+  }
+
+    .red_wrapper{
+       background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+        min-height: 376px;
+        margin-bottom: 100px;
+
+
+    h2{
+            font-size: 38px;
+            word-spacing: 1px;
+            line-height: 40px;
+        }
+         p{
+            
+            font-size: 16px;
+            line-height: 20px;
+           
+        }
+    
+      .red_wrapper_flex{
+        
+        display: flex;
+        justify-content: space-around;
+        
+      }  
+      li{
+        
+         font-size: 14px;
+         
+
+      }
+             
+    
+}
+
+
+.section_meeting{
+   
+   gap: 50px;
+   
+    
+.text_meeting{
+    max-width: 45%;
+    
+}
+h2{
+         
+ font-size: 38px; 
+ line-height: 40px;           
+}
+p{
+    line-height: 25px;
+}
+    
+img{
+    width: 45%;
+    height: 400px;
+}
+
+} 
+    
+.section_laptop{
+    
+    gap: 50px;
+   
+  
+.text_laptop{
+    max-width: 45%;
+    
+}
+
+h2{
+   font-size: 38px; 
+   line-height: 40px;   
+         
+}
+p{
+    line-height: 25px;
+}
+
+img{
+    max-width: 424px;
+    max-height: 404px;   
+}
+}
+
+.grey_section{
+ 
+
+.greySection_flex{
+    
+    gap: 20px;
+  
+ span{
+    width: 120px;
+    height: 65px;
+    padding: 15px 18px;
+
+img{
+    width: 100px;
+    height: 50px;
+}
+    
+ }
+
+.column1,
+.column2,
+.column3,
+.column4,
+.column5{
+    
+    gap: 20px;
+}
+
+}
+}
+
+footer {
+    padding: 80px 60px 70px 60px;
+
+.box1{
+    display: flex;
+    gap: 50px;
+
+    .row1,
+    .row2,
+    .row3,
+    .row4{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    h4{
+        
+        line-height: 18px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    li{
+        
+        line-height: 20px;
+    }
+   
+}
+
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+   }
+
+  }
+
+}
+
+
+@media (max-width: 763px) {
+  
+header {
+    height: 900px;
+    margin-bottom: 60px;
+
+ul{
+  display: flex;
+  flex: 1;
+}
+li {
+    display: none;
+}
+.burgerMenu{
+    display: block;
+}
+
+.h1andtext{
+    text-align: center;
+    width: 335px;
+    
+}
+   h1{
+    
+    font-size: 48px;
+   
+}
+p{
+
+    margin-bottom: 43px;
+}
+
+.inputBox{
+    margin-bottom: 85px;
+
+}
+
+
+input{
+   
+    margin-top: 13px;
+    margin-left: 24px;
+    margin-right: 17px;
+    
+    
+}
+.button2{
+    width: 90px;
+    height: 50px;
+    padding: 6px 10px;
+}
+}
+
+aside{
+    
+   h2{
+    margin-bottom: 15px;
+   }
+    .gridMaintext{
+    width: 335px;
+    margin-bottom: 40px;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        gap: 80px;
+        max-width: 298px;
+        margin-bottom: 90px;
+    }
+
+    }
+
+
+    .red_wrapper{
+        padding: 50px 20px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 90px;
+        
+        h2{
+            width: 335px;
+            margin: 0 auto;
+            
+        }
+         p{
+            
+            margin-bottom: 70px;
+        }
+    
+      .red_wrapper_flex{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        
+
+        img{
+            transform: rotate(90deg);
+            width: 36px;
+            height: 36px;
+        }
+      } 
+       
+    
+    
+}
+
+
+.section_meeting{
+
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    margin-bottom: 60px;
+    align-items: center;
+    text-align: center;
+
+
+
+.text_meeting{
+    width: 335px;
+    
+}
+
+h2{     
+        font-size: 36px;
+        width: 335px;
+         
+}
+p{      width: 335px;
+         
+}
+button{
+    
+    width:335px;
+
+}
+img{
+    width: 335px;
+    height: auto;
+  
+}
+
+} 
+  
+ .section_laptop{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+    align-items: center;
+    text-align: center;
+
+
+
+.text_laptop{
+    width: 335px;
+    
+}
+
+h2{     
+        font-size: 36px;
+        width: 335px;
+         
+}
+p{      width: 335px;
+         
+}
+button{
+    
+    width:335px;
+
+}
+img{
+    width: 335px;
+    height: auto;
+}
+
+}  
+
+.grey_section{
+    padding: 40px 50px;
+    margin-bottom: 90px;
+
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41.5px;
+   
+}
+p{
+    
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.greySection_flex{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+.contact_section{ 
+    margin-bottom: 82px;
+
+
+.contact_foto {
+    position: relative;
+    display: inline-block;
+
+    .people {
+        width: 96px;
+        height: 96px;
+        display: block;
+
+    }
+
+    .redCircle {
+        width: 45px;
+        height: 45px;
+    }
+}
+h2{
+   
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+p{
+    width: 335px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+button{
+    
+    font-size: 16px;
+    line-height: 20px;
+    padding: 11px 20px;
+    
+}
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+   
+}
+
+.box2{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 62px;
+
+}
+ 
+
+
+}
+}

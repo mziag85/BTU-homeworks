@@ -6,13 +6,10 @@
 }
 
 header {
-  background: url(./images/heroFoto.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url(./images/heroFoto.svg) center/cover no-repeat;
   width: 100%;
-  height: 754px;
-  padding: 35px 122px;
+  min-height: 754px;
+  padding: 35px 120px;
   position: relative;
   margin-bottom: 120px;
 }
@@ -20,6 +17,9 @@ header nav {
   display: flex;
   justify-content: flex-end;
   gap: 40px;
+}
+header .burgerMenu {
+  display: none;
 }
 header ul {
   display: flex;
@@ -43,11 +43,12 @@ header .button1 {
   border-radius: 5px;
 }
 header .h1andtext {
-  width: 665px;
-  height: 406px;
-  position: absolute;
+  max-width: 665px;
+  max-height: 406px;
   top: 200px;
   left: 122px;
+  position: absolute;
+  text-wrap: wrap;
 }
 header h1 {
   font-weight: 800;
@@ -70,14 +71,14 @@ header .inputBox {
 }
 header input {
   color: rgba(0, 0, 0, 0.4);
+  margin-top: 19px;
+  margin-left: 32px;
+  margin-right: 150px;
   font-weight: 400;
   font-size: 16px;
   line-height: 36px;
   word-spacing: 0.2px;
   border: none;
-  margin-left: 32px;
-  margin-top: 19px;
-  margin-right: 150px;
 }
 header .button2 {
   border: none;
@@ -205,15 +206,16 @@ aside p {
 
 .section_meeting {
   display: flex;
-  justify-content: space-around;
+  gap: 100px;
   margin: 0 auto;
   margin-bottom: 120px;
+  justify-content: center;
 }
 .section_meeting .text_meeting {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 420px;
+  width: 32%;
 }
 .section_meeting h2 {
   font-weight: 700;
@@ -238,23 +240,24 @@ aside p {
   width: 160px;
 }
 .section_meeting img {
-  width: 504px;
-  height: 480px;
+  max-width: 504px;
+  max-height: 480px;
   border-radius: 8px;
   object-fit: cover;
 }
 
 .section_laptop {
   display: flex;
-  justify-content: space-around;
+  gap: 100px;
   margin: 0 auto;
   margin-bottom: 120px;
+  justify-content: center;
 }
 .section_laptop .text_laptop {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 420px;
+  width: 32%;
 }
 .section_laptop h2 {
   font-weight: 700;
@@ -279,7 +282,7 @@ aside p {
   width: 160px;
 }
 .section_laptop img {
-  width: 504px;
+  max-width: 504px;
   height: 480px;
   border-radius: 8px;
   object-fit: cover;
@@ -394,7 +397,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding: 80px 100px 70px 5px;
+  padding: 80px 100px 70px 100px;
 }
 footer .box1 {
   display: flex;
@@ -438,6 +441,347 @@ footer .box2 .copyright {
 footer .box2 .socialNetworks {
   display: flex;
   gap: 16px;
+}
+
+@media (min-width: 764px) and (max-width: 1024px) {
+  header {
+    height: auto;
+    padding: 35px 40px;
+  }
+  header nav {
+    justify-content: center;
+  }
+  header .h1andtext {
+    top: 162px;
+    left: 84px;
+    width: 665px;
+    height: 365px;
+  }
+  header h1 {
+    width: 665px;
+  }
+  header p {
+    width: 565px;
+  }
+  header .inputBox {
+    width: 422px;
+    margin-bottom: 127px;
+  }
+  header input {
+    margin-left: 26px;
+    margin-right: 31px;
+  }
+  aside {
+    text-align: center;
+    padding: 5px 80px;
+  }
+  aside .gridMaintext {
+    max-width: 852px;
+  }
+  aside .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 116px;
+    max-width: 764px;
+    margin-bottom: 130px;
+  }
+  .red_wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    min-height: 376px;
+    margin-bottom: 100px;
+  }
+  .red_wrapper h2 {
+    font-size: 38px;
+    word-spacing: 1px;
+    line-height: 40px;
+  }
+  .red_wrapper p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .red_wrapper .red_wrapper_flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  .red_wrapper li {
+    font-size: 14px;
+  }
+  .section_meeting {
+    gap: 50px;
+  }
+  .section_meeting .text_meeting {
+    max-width: 45%;
+  }
+  .section_meeting h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .section_meeting p {
+    line-height: 25px;
+  }
+  .section_meeting img {
+    width: 45%;
+    height: 400px;
+  }
+  .section_laptop {
+    gap: 50px;
+  }
+  .section_laptop .text_laptop {
+    max-width: 45%;
+  }
+  .section_laptop h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .section_laptop p {
+    line-height: 25px;
+  }
+  .section_laptop img {
+    max-width: 424px;
+    max-height: 404px;
+  }
+  .grey_section .greySection_flex {
+    gap: 20px;
+  }
+  .grey_section .greySection_flex span {
+    width: 120px;
+    height: 65px;
+    padding: 15px 18px;
+  }
+  .grey_section .greySection_flex span img {
+    width: 100px;
+    height: 50px;
+  }
+  .grey_section .greySection_flex .column1,
+  .grey_section .greySection_flex .column2,
+  .grey_section .greySection_flex .column3,
+  .grey_section .greySection_flex .column4,
+  .grey_section .greySection_flex .column5 {
+    gap: 20px;
+  }
+  footer {
+    padding: 80px 60px 70px 60px;
+  }
+  footer .box1 {
+    display: flex;
+    gap: 50px;
+  }
+  footer .box1 .row1,
+  footer .box1 .row2,
+  footer .box1 .row3,
+  footer .box1 .row4 {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  footer .box1 h4 {
+    line-height: 18px;
+  }
+  footer .box1 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  footer .box1 li {
+    line-height: 20px;
+  }
+  footer .box2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 763px) {
+  header {
+    height: 900px;
+    margin-bottom: 60px;
+  }
+  header ul {
+    display: flex;
+    flex: 1;
+  }
+  header li {
+    display: none;
+  }
+  header .burgerMenu {
+    display: block;
+  }
+  header .h1andtext {
+    text-align: center;
+    width: 335px;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header p {
+    margin-bottom: 43px;
+  }
+  header .inputBox {
+    margin-bottom: 85px;
+  }
+  header input {
+    margin-top: 13px;
+    margin-left: 24px;
+    margin-right: 17px;
+  }
+  header .button2 {
+    width: 90px;
+    height: 50px;
+    padding: 6px 10px;
+  }
+  aside h2 {
+    margin-bottom: 15px;
+  }
+  aside .gridMaintext {
+    width: 335px;
+    margin-bottom: 40px;
+  }
+  aside .grid {
+    grid-template-columns: 1fr;
+    gap: 80px;
+    max-width: 298px;
+    margin-bottom: 90px;
+  }
+  .red_wrapper {
+    padding: 50px 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 90px;
+  }
+  .red_wrapper h2 {
+    width: 335px;
+    margin: 0 auto;
+  }
+  .red_wrapper p {
+    margin-bottom: 70px;
+  }
+  .red_wrapper .red_wrapper_flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .red_wrapper .red_wrapper_flex img {
+    transform: rotate(90deg);
+    width: 36px;
+    height: 36px;
+  }
+  .section_meeting {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    margin-bottom: 60px;
+    align-items: center;
+    text-align: center;
+  }
+  .section_meeting .text_meeting {
+    width: 335px;
+  }
+  .section_meeting h2 {
+    font-size: 36px;
+    width: 335px;
+  }
+  .section_meeting p {
+    width: 335px;
+  }
+  .section_meeting button {
+    width: 335px;
+  }
+  .section_meeting img {
+    width: 335px;
+    height: auto;
+  }
+  .section_laptop {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+    align-items: center;
+    text-align: center;
+  }
+  .section_laptop .text_laptop {
+    width: 335px;
+  }
+  .section_laptop h2 {
+    font-size: 36px;
+    width: 335px;
+  }
+  .section_laptop p {
+    width: 335px;
+  }
+  .section_laptop button {
+    width: 335px;
+  }
+  .section_laptop img {
+    width: 335px;
+    height: auto;
+  }
+  .grey_section {
+    padding: 40px 50px;
+    margin-bottom: 90px;
+  }
+  .grey_section h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41.5px;
+  }
+  .grey_section p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .grey_section .greySection_flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_section {
+    margin-bottom: 82px;
+  }
+  .contact_section .contact_foto {
+    position: relative;
+    display: inline-block;
+  }
+  .contact_section .contact_foto .people {
+    width: 96px;
+    height: 96px;
+    display: block;
+  }
+  .contact_section .contact_foto .redCircle {
+    width: 45px;
+    height: 45px;
+  }
+  .contact_section h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+  .contact_section p {
+    width: 335px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .contact_section button {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 11px 20px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer .box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+  }
+  footer .box2 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 62px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
