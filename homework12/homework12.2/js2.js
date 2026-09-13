@@ -8,9 +8,15 @@ const button = document.querySelector("button");
 const todo_list = document.querySelector(".todo-list");
 
 button.addEventListener("click", function(){
+
+  if (input.value.trim() === "") {
+return;
+}
  const newTask = document.createElement("div");
+ newTask.textContent = input.value;
  todo_list.appendChild(newTask);
 
- newTask.textContent = input.value;
+ input.value = ""
+
 
 });
